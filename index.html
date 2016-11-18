@@ -4,10 +4,8 @@ layout: default
 <ul class="article-list">
 	{% for post in site.posts %}
 	<li class="item">
-		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-		<div class="item-footer">
-			{{ post.date | date_to_string }}
-		</div>
+		<div class="article-time">{{ post.date | date_to_string }}</div>
+		<a class="article-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
 	</li>
 	{% endfor %}
 </ul>

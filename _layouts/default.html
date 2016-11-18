@@ -5,20 +5,24 @@
 		<!-- Meta -->
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta name="description" content="A beautiful Jekyll theme for creating resume">
     	<link rel="shortcut icon" href="favicon.ico">
 
 		<!-- Local CSS -->
-		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/{% if site.style %}{{ site.style}}.css{% else %}styles.css{% endif %}">
+		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/{% if site.style %}{{ site.style}}.css{% else %}main.css{% endif %}">
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="sidebar-wrapper">
+				<div class="profile-container">
+					<img class="profile" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture"/>
+					<h1>{% if site.name %}{{site.name}}{% else %}Haoqing Zhang{% endif %}</h1>
+					<h2>{% if site.tagline %}{{ site.tagline }}{% else %}Java Developer{% endif %}</h2>
+				</div>
 			</div>
 			<div class="main-wrapper">
 				{{ content }}
-			<div>
+			</div>
 		</div>
-		<div class="footer"></div>
+		<footer class="footer">Designed By Haoqing Zhang</footer>
 	</body>
 </html>
