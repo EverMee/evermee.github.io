@@ -110,12 +110,15 @@ a:focus {
 }
 
 @media (max-width: 767px) {
+  body {
+    padding: 10px;
+  }
   .sidebar-wrapper {
     position: static;
     width: inherit;
   }
   .main-wrapper {
-    padding: 30px;
+    padding: 20px;
   }
 
   .main-wrapper .article-list .item .article-title {
