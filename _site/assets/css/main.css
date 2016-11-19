@@ -101,7 +101,6 @@ a:focus {
   font-weight: 700;
   word-wrap: break-word;
 }
-
 .footer {
   display: block;
   padding: 30px;
@@ -111,7 +110,7 @@ a:focus {
 
 @media (max-width: 767px) {
   body {
-    padding: 10px;
+    padding: 15px;
   }
   .sidebar-wrapper {
     position: static;
@@ -119,10 +118,11 @@ a:focus {
   }
   .main-wrapper {
     padding: 20px;
+    padding-right: 10px
   }
 
   .main-wrapper .article-list .item .article-title {
-    padding-left:40px;
+    padding-left:20px;
     padding-top: 35px;
     max-width:450px;
     font-size: 18px;
