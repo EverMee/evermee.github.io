@@ -96,9 +96,10 @@ a:focus {
 .main-wrapper .article-list .item .article-title {
   display: block;
   padding-left:110px;
-  width:450px;
+  max-width:450px;
   font-size: 18px;
   font-weight: 700;
+  word-wrap: break-word;
 }
 
 .footer {
@@ -106,4 +107,23 @@ a:focus {
   padding: 30px;
   padding-top: 40px;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .sidebar-wrapper {
+    position: static;
+    width: inherit;
+  }
+  .main-wrapper {
+    padding: 30px;
+  }
+
+  .main-wrapper .article-list .item .article-title {
+    padding-left:40px;
+    padding-top: 35px;
+    max-width:450px;
+    font-size: 18px;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
 }
