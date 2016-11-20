@@ -118,12 +118,10 @@ a:focus {
   }
   .main-wrapper {
     padding: 20px;
-    padding-right: 10px
   }
-
   .main-wrapper .article-list .item .article-title {
-    padding-left:20px;
     padding-top: 35px;
+    padding-left: 0;
     max-width:450px;
     font-size: 18px;
     font-weight: 700;
