@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        {% include head.html %}
+    </head>
+    <body>
+        {% include navbar.html %}
+		<div class="content-wrapper" style="padding: 0; border: 1px solid #d9d9d9;">
+			<div class="left-wrapper">
+				{{ content }}
+			</div>
+			<div class="side-wrapper">
+				<div class="profile-container">
+					<img class="profile" src="{{site.baseurl}}/assets/images/{% if site.pic %}{{ site.pic }}{% else %}profile.png{% endif %}" alt="profile picture"/>
+					<h1>{% if site.name %}{{site.name}}{% else %}Haoqing Zhang{% endif %}</h1>
+					<h2>{% if site.tagline %}{{ site.tagline }}{% else %}Java Developer{% endif %}</h2>
+				</div>
+				<div class="contact-container">
+					<ul>
+						<li>
+							<i class="fa fa-envelope"></i>
+							<a> zhanghq_jlu@qq.com</a>
+						</li>
+						<li>
+							<i class="fa fa-wechat"></i>
+							<a> zhanghq_jlu</a>
+						</li>
+						<li>
+							<i class="fa fa-weibo"></i>
+							<a> 浩清_JLU</a>
+						</li>
+						<li>
+							<i class="fa fa-qq"></i>
+							<a> 1115713971</a>
+						</li>
+						<li>
+							<i class="fa fa-github"></i>
+							<a> evermee</a>
+						</li>
+						<li>
+							<i class="fa fa-globe"></i>
+							<a> evermee.github.io</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<footer>Designed by Haoqing Zhang</footer>
+    </body>
+</html>

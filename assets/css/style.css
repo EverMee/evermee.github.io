@@ -47,11 +47,11 @@ a {
 }
 .nav .hidden-button {
 	height: 50px;
-	width: 50px;
+	width: 70px;
 	display: none;
   color: #fff;
   text-align:center;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .nav .dropdown-menu {
@@ -144,7 +144,7 @@ a {
 	color: #42A8C0;
 }
 
-.article-wrapper {
+.content-wrapper {
 	background: #fff;
   max-width: 940px;
   margin: 0 auto;
@@ -158,9 +158,69 @@ a {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* About page style */
+.left-wrapper {
+  float: left;
+  width: 73%;
+  background: #fff;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  height: 800px;
+}
+.side-wrapper {
+  float: left;
+  width: 27%;
+  background: #42A8C0;
+  height: 800px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.side-wrapper .profile-container {
+  width: 100%;
+  height: 240px;
+  box-sizing: border-box;
+  background: #2d7788;
+  text-align: center;
+}
+.side-wrapper .profile-container .profile {
+  border: 0;
+  margin-top: 30px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius:50px;
+}
+.side-wrapper .profile-container h1 {
+  font-size: 27px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.side-wrapper .profile-container h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.side-wrapper .contact-container {
+  padding: 30px;
+}
+
+.side-wrapper .contact-container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.side-wrapper .contact-container ul li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
 footer {
   /* 清除浮动，使得footer不受main-wrapper和right-wrapper浮动的影响 */
-  clear:both;
+  clear: both;
 	width: 100%;
   box-sizing: border-box;
   padding: 20px;
@@ -195,8 +255,19 @@ footer {
     padding: 10px;
 		width: 100%;
   }
-
-  .article-wrapper {
+  .content-wrapper {
     padding: 10px 15px;
+  }
+  .side-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .left-wrapper {
+    position: absolute;
+    top: 800px;
+    left: 0;
+    width: 100%;
   }
 }
