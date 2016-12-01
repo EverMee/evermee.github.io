@@ -116,7 +116,29 @@ a {
 	margin: 20px 0;
 	margin-bottom: 35px;
 }
-
+/**********Article list by category*********/
+.main-wrapper h2 {
+  color: #42A8C0;
+  margin: 20px 0;
+}
+.main-wrapper .category-list {
+  list-style: none; 
+  margin:0;
+  padding:10px 30px;
+  border-bottom: 1px dashed #c5c2c2;
+}
+.main-wrapper .category-list li{
+  padding-bottom: 10px;
+}
+.main-wrapper .category-list time {
+  display:inline-block;
+  width: 110px;
+}
+.main-wrapper .category-list a {
+  color: #42A8C0;
+  font-weight: 700;
+}
+/*******************************************/
 .right-wrapper {
   float: left;
   width: 25%;
@@ -124,7 +146,6 @@ a {
   box-sizing: border-box;
   padding-left: 20px;
 }
-
 .right-wrapper .board {
 	border: 1px solid #d9d9d9;
 	background: #fff;
@@ -143,7 +164,31 @@ a {
 	box-sizing: border-box;
 	color: #42A8C0;
 }
-
+.right-wrapper .board .category-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  list-style: none;
+}
+.right-wrapper .board .category-list a {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 7px 15px;
+  padding-right: 20px;
+  color: #545E6C;
+  font-size: 15px;
+  border-bottom: 1px solid #eee;
+}
+.right-wrapper .board .category-list a:hover {
+  color: #fff;
+  background: #42A8C0;
+}
+.right-wrapper .board .category-list a .size {
+  display: block;
+  float: right;
+}
+/********* Article page style ******************/
 .content-wrapper {
 	background: #fff;
   max-width: 940px;
@@ -158,7 +203,7 @@ a {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* About page style */
+/********* About page style ********************/
 .left-wrapper {
   float: left;
   width: 73%;

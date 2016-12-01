@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>{{ site.title }}</title>
-        {% include head.html %}
-    </head>
-    <body>
-        {% include navbar.html %}
-		<div class="wrapper">
-			<div class="main-wrapper">
-				{{ content }}
-			</div>
-            <div class="right-wrapper">
-                <div class="board">
-                    <div class="board-title">
-                        Recent Posts  
-                    </div>
-                </div>
-                <div class="board">
-                    <div class="board-title">
-                        Categories 
-                    </div>
+
+<head>
+    <title>{{ site.title }}</title>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include navbar.html %}
+    <div class="wrapper">
+        <div class="main-wrapper">
+            {{ content }}
+        </div>
+        <div class="right-wrapper">
+            <div class="board">
+                <div class="board-title">
+                    Recent Posts
                 </div>
             </div>
-		</div>
-		<footer>Designed by Haoqing Zhang</footer>
-    </body>
+            <div class="board">
+                <div class="board-title">
+                    Categories
+                </div>
+                <ul class="category-list">
+                    {% for category in site.categories %}
+                    <li>
+                        <a href="javascript:void(0)">
+                            <span>{{ category | first }}</span>
+                            <span class="size">{{ category | last | size }}</span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>Designed by Haoqing Zhang</footer>
+</body>
+
 </html>
