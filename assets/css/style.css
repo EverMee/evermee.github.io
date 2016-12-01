@@ -9,12 +9,13 @@ a {
 }
 .header {
     background: #42A8C0;
+    width: 100%;
     height: 50px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px 1px #2d7788;
 }
 .header .nav {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     line-height: 50px;
 }
@@ -52,6 +53,7 @@ a {
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 .main-wrapper {
   float: left;
@@ -99,6 +101,7 @@ a {
 	background: #fff;
 	width: 100%;
 	height: 350px;
+  box-sizing: border-box;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 	margin-bottom: 20px;
 }
@@ -120,25 +123,30 @@ a {
   box-sizing: border-box;
   padding: 20px 50px;
   min-height: 800px;
+  font-size: 15px;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-  position: fixed;
-	left: 0;
-	bottom: 0;
+  /* 清除浮动，使得footer不受main-wrapper和right-wrapper浮动的影响 */
+  clear:both;
 	width: 100%;
-  padding: 30px;
-  padding-top: 40px;
+  box-sizing: border-box;
+  padding: 20px;
   text-align: center;
-  color: #000;
 }
 
-
-
+@media (max-width: 1139px) {
+	.nav {
+		width: 95%;
+	}
+}
 @media (max-width: 767px) {
+  .nav {
+		width: 95%;
+	}
 	.nav ul {
 		display: none;
 	}
@@ -154,11 +162,9 @@ footer {
     padding: 10px;
 		width: 100%;
   }
+
+  .article-wrapper {
+    padding: 10px 10px;
+  }
 }
 
-@media (max-width: 1139px)
-{
-	.nav {
-		width: 100%;
-	}
-}
