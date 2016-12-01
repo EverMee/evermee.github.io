@@ -5,33 +5,49 @@
         <!-- Meta -->
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.ico">
-
         <!-- Local CSS -->
 		<link rel="stylesheet" href="{{site.baseurl}}/assets/css/style.css">
+        <script src="{{site.baseurl}}/assets/js/jquery-3.1.1.min.js"></script>
+        <script src="{{site.baseurl}}/assets/js/default.js"></script>
     </head>
     <body>
         <div class="header">
             <div class="nav">
                 <a class="brand">HaoqingZhang</a>
                 <small>Java Developer</small>
-                <ul>
+                <ul class="menu">
                     <li>
-                        <a href="javascript:;">Home</a>
+                        <a href="javascript:void(0)">Home</a>
                     </li>
                     <li>
-                        <a href="javascript:;">Categories</a>
+                        <a href="javascript:void(0)">Categories</a>
                     </li>
                     <li>
-                        <a href="javascript:;">Collections</a>
+                        <a href="javascript:void(0)">Collections</a>
                     </li>
                     <li>
-                        <a href="javascript:;">About</a>
+                        <a href="javascript:void(0)">About</a>
                     </li>
                 </ul>
-                <div class="hidden-menu">
-                    Hidden
-                </div>
+                <a class="hidden-button" id="hidden-button" href="javascript:void(0)">
+                    <i class="icon-reorder"></i>
+                </a>
+                <ul class="dropdown-menu" id="dropdown-menu">
+                    <li>
+                        <a href="javascript:void(0)">Home</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Categories</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Collections</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">About</a>
+                    </li>
+                </ul>
             </div>
         </div>
 		<div class="wrapper">
