@@ -6,6 +6,7 @@ layout: default
 	<li class="item">
         <a class="article-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <p>{{ post.excerpt }}</p>
+	<time>{{ post.date | date:"%Y-%m-%d"}}</time>
         <hr>
 	</li>
 	{% endfor %}
